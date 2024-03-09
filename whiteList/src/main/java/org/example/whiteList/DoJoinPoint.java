@@ -15,6 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -22,6 +23,7 @@ import java.lang.reflect.Method;
 
 @Aspect
 @Component
+@Order(value = 2)
 public class DoJoinPoint {
 
     private Logger logger= LoggerFactory.getLogger(DoJoinPoint.class);
