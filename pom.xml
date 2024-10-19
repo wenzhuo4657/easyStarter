@@ -15,7 +15,7 @@
         <module>hystrix</module>
         <module>DoRateLimiter</module>
         <module>methodext</module>
-        <module>mybatis</module>
+        <module>dbRouter</module>
     </modules>
 
     <parent>
