@@ -2,8 +2,10 @@ package cn.wenzhuo4657.db.router.config;
 
 import cn.wenzhuo4657.db.router.Contants.AppEnum;
 import cn.wenzhuo4657.db.router.DBRouterConfig;
+import cn.wenzhuo4657.db.router.DBRouterJoinPoint;
 import cn.wenzhuo4657.db.router.dynamic.DynamicDataSource;
 import cn.wenzhuo4657.db.router.util.PropertyUtil;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,10 +26,27 @@ import java.util.Map;
 public class DataSourceAutoConfig implements EnvironmentAware {
 
 
+    /**
+     *  @author:wenzhuo4657
+        des: 数据源配置组
+    */
     private Map<String, Map<String, Object>> dataSourceMap = new HashMap<>();
 
+    /**
+     *  @author:wenzhuo4657
+        des: 默认数据源配置
+    */
+    private Map<String, Object> defaultDataSourceConfig;
     private int dbCount;  //分库数
     private int tbCount;  //分表数
+
+
+
+    @Bean(name = "db-router-point")
+    @ConditionalOnMissingBean //根据条件判断进行注入，默认条件为是否有相同的bean存在
+    public DBRouterJoinPoint point(){
+        return new DBRouterJoinPoint();
+    }
 
     @Bean
     public DBRouterConfig dbRouterConfig() {
@@ -53,16 +72,14 @@ public class DataSourceAutoConfig implements EnvironmentAware {
     @Override
     public void setEnvironment(Environment environment) {
         String prefix = "router.jdbc.datasource.";
+        dbCount = Integer.valueOf(environment.getProperty(prefix + "dbCount"));
+        tbCount = Integer.valueOf(environment.getProperty(prefix + "tbCount"));
         String dataSources = environment.getProperty(prefix + "list");
-        /**
-         *  @author:wenzhuo4657
-            des: assert断言关键字，1.4之后引入，默认禁用，通过 vm参数 -ea启用
-         作用：根据布尔表达式判断结果抛出错误，进行快速检查，生产环境中不建议使用
-        */
-        assert dataSources!=null;
-        for (String each:dataSources.split(AppEnum.DataSourse_name_split.getCode())){
-              //  wenzhuo TODO 2024/10/20 : 不是很理解为什么要注入到map中，
-            PropertyUtil.handle(environment,prefix+each,Map.class);
+
+        for (String dbInfo:dataSources.split(AppEnum.DataSourse_name_split.getCode())){
+            Map<String,Object> dataSourceProps = PropertyUtil.handle(environment, prefix + dbInfo, Map.class);
+            dataSourceMap.put(dbInfo, dataSourceProps);
+
         }
     }
 

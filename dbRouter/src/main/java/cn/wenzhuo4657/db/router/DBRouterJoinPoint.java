@@ -35,12 +35,10 @@ public class DBRouterJoinPoint {
     public void aopPoint() {
     }
 
-    @Around("aopPoint()")
-    public Object dbRouter(ProceedingJoinPoint point) throws Throwable {
+    @Around("aopPoint()&& @annotation(dbRouter)")
+    public Object dbRouter(ProceedingJoinPoint point,DBRouter dbRouter) throws Throwable {
         Method method=getMethod(point);
-        DBRouter dbRouter=method.getAnnotation(DBRouter.class);
-          //  wenzhuo TODO 2024/10/20 : 暂时写死
-        String dbKey = "userId";
+        String dbKey = dbRouter.key();
         if (StringUtils.isBlank(dbKey)) throw new RuntimeException("annotation DBRouter key is null！");
 
 //        计算路由
@@ -66,6 +64,7 @@ public class DBRouterJoinPoint {
     private Method getMethod(JoinPoint jp) throws NoSuchMethodException {
         Signature sig = jp.getSignature();
         MethodSignature methodSignature = (MethodSignature) sig;
+        Class<?>[] interfaces = getClass(jp).getInterfaces();
         return getClass(jp).getMethod(methodSignature.getName(), methodSignature.getParameterTypes());
     }
 

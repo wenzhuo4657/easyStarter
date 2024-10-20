@@ -58,7 +58,7 @@ public class PropertyUtil {
     private static Object v2(final Environment environment, final String prefix, final Class<?> targetClass) {
         try {
 
-            Binder binder=new Binder();
+
 
             Class<?> binderClass = Class.forName("org.springframework.boot.context.properties.bind.Binder");
             /**
@@ -79,10 +79,7 @@ public class PropertyUtil {
             String prefixParam = prefix.endsWith(".") ? prefix.substring(0, prefix.length() - 1) : prefix;
 
             Object bindResultObject = bindMethod.invoke(binderObject, prefixParam, targetClass);
-            /**
-             *  @author:wenzhuo4657
-                des: 此处默认了目标对象有get方法。
-            */
+          //  wenzhuo TODO 2024/10/20 : 不懂这里为什么能找到get方法
             Method resultGetMethod = bindResultObject.getClass().getDeclaredMethod("get");
             return resultGetMethod.invoke(bindResultObject);
 

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: db-Router
+router:
+  jdbc:
+    datasource:
+      dbCount: 2
+      tbCount: 2
+      list: db01,db02
+      db01:
+        url: 123213
+      db02:
+        url: 2313
