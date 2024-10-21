@@ -6,6 +6,7 @@ router:
     datasource:
       dbCount: 2
       tbCount: 2
+      routerKey: userId
       list: db01,db02
       db01:
         url: 123213

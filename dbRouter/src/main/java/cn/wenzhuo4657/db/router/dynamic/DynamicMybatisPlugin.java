@@ -81,13 +81,17 @@ public class DynamicMybatisPlugin  implements Interceptor {
 
         log.info("mybatis-sql拦截中： \nBoundSql:{} \n target:{} ", JSON.toJSONString(boundSql),replaceAll);
 
-//        反射修改字节码文件
+//        反射修改属性
         Field field = boundSql.getClass().getDeclaredField("sql");
-        field.setAccessible(true);
+        field.setAccessible(true);//关闭访问权限控制
         field.set(boundSql,replaceAll);
-  //  wenzhuo TODO 2024/10/21 : 不是很能理解这里的反射逻辑，反射代码究竟在什么时候执行，该方法仅仅修改当前对象的字节码文件？
-        log.info("mybatis-sql拦截后： \nBoundSql:{}  ", JSON.toJSONString(target.getBoundSql()));
+        field.setAccessible(false);//开启访问权限控制
 
+        /**
+         *  @author:wenzhuo4657
+            des: Java反射主要用于在运行时操作已加载的类，而不是直接编辑或修改字节码文件
+         而代理是通过反射生成代理方法、代理类，将其作为bean注入容器中。
+        */
         return invocation.proceed();
     }
 
