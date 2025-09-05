@@ -18,6 +18,7 @@
         <module>DoRateLimiter</module>
         <module>methodext</module>
         <module>DynamicRouting-springCloud</module>
+        <module>SimplifyTheProcess</module>
     </modules>
 
     <parent>

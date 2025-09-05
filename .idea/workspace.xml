@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01617cc6-4ca8-4dbb-83b4-cbb855c0932d" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="01617cc6-4ca8-4dbb-83b4-cbb855c0932d" name="更改" comment="feat: 新增springcloud动态路由模块">
+      <change afterPath="$PROJECT_DIR$/SimplifyTheProcess/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplifyTheProcess/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplifyTheProcess/src/main/java/cn/wenzhuo4657/process/tree/AbstractStrategyRouterr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplifyTheProcess/src/main/java/cn/wenzhuo4657/process/tree/StrategyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplifyTheProcess/src/main/java/cn/wenzhuo4657/process/tree/StrategyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoRateLimiter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DoRateLimiter/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +20,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -34,24 +53,24 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/working/my-project/springboot-starter/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/working/my-project/springboot-starter/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\working\my-project\springboot-starter" />
@@ -81,7 +100,7 @@
       <workItem from="1757050688078" duration="1557000" />
       <workItem from="1757052261748" duration="76000" />
       <workItem from="1757052340002" duration="27000" />
-      <workItem from="1757052378460" duration="1061000" />
+      <workItem from="1757052378460" duration="6401000" />
     </task>
     <task id="LOCAL-00001" summary="delete: 删除无用、未完成的中间件">
       <option name="closed" value="true" />
@@ -99,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757051627049</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: 新增springcloud动态路由模块">
+      <option name="closed" value="true" />
+      <created>1757053812633</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1757053812633</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,7 +143,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="Simplify-the-process" />
                       </list>
                     </value>
                   </entry>
@@ -131,6 +158,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="delete: 删除无用、未完成的中间件" />
     <MESSAGE value="docs： readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs： readme" />
+    <MESSAGE value="feat: 新增springcloud动态路由模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增springcloud动态路由模块" />
   </component>
 </project>
