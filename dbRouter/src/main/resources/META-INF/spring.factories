@@ -1,1 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=cn.wenzhuo4657.db.router.config.DataSourceAutoConfig

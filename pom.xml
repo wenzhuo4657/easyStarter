@@ -10,12 +10,10 @@
 
     <packaging>pom</packaging>
     <modules>
-        <module>springboot-starter-test</module>
         <module>whiteList</module>
         <module>hystrix</module>
         <module>DoRateLimiter</module>
         <module>methodext</module>
-        <module>dbRouter</module>
     </modules>
 
     <parent>
