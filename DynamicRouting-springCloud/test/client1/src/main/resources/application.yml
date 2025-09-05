@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  application:
+    name:  gateway-service
+
+redis:
+  sdk:
+    config:
+      host: 117.72.36.124
+      port: 6379
+      username: ${redis_username}
+      password: ${redis_password}
+      pool-size: 64
+      minIdleSize: 10
+
+
+gateway:
+  services:
+    enable: true

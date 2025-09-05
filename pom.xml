@@ -9,11 +9,15 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
+
+<!--    todo 这里的组件不能依托与父pom，他们每一个都应该是单独的模块，互不干涉。-->
+<!--    todo 需要了解发布的手段，maven等发布仓库，以及编写个自己对应的使用手册 -->
     <modules>
         <module>whiteList</module>
         <module>hystrix</module>
         <module>DoRateLimiter</module>
         <module>methodext</module>
+        <module>DynamicRouting-springCloud</module>
     </modules>
 
     <parent>
