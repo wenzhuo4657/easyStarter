@@ -10,7 +10,7 @@ public interface StrategyMapper <T, D, R>{
 
 
     /**
-     * 获取策略处理器。如果返回null，则表示没有匹配的策略处理器，即处理结束，返回R对象
+     * 策略处理器分发
      * @param requestParameter  入参
      * @param dynamicContext  上下文
      * @return
