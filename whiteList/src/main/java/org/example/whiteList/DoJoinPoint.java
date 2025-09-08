@@ -3,6 +3,7 @@ package org.example.whiteList;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.base.Throwables;
+import jakarta.annotation.Resource;
 import org.apache.commons.beanutils.BeanUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
@@ -18,7 +19,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.lang.reflect.Method;
 
 @Aspect

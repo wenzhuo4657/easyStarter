@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+
+
+<!--    bom 包的定位-->
+
+    <groupId>io.github.wenzhuo4657</groupId>
+    <artifactId>easyStarter-bom</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+<!--    打包方式定义-->
+    <packaging>pom</packaging>
+
+<!--    描述定义-->
+    <name>huSun-bom</name>
+    <description>猢狲的百宝箱</description>
+    <url>https://github.com/wenzhuo4657/easyStarter</url>
+
+
+<!--    许可证定义-->
+    <licenses>
+        <license>
+            <name>Apache License</name>
+            <url>https://opensource.org/license/apache-2-0/</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+<!--    源代码管理配置-->
+    <scm>
+        <connection>https://github.com/wenzhuo4657/easyStarter.git</connection>
+        <developerConnection>https://github.com/wenzhuo4657/easyStarter.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/wenzhuo4657/easyStarter</url>
+    </scm>
+
+
+<!--    物料清单-->
+    <dependencyManagement>
+         <dependencies>
+             <!-- 项目内部模块版本管理 -->
+             <dependency>
+                 <groupId>io.github.wenzhuo4657</groupId>
+                 <artifactId>whitelist</artifactId>
+                 <version>${project.version}</version>
+             </dependency>
+             <dependency>
+                 <groupId>io.github.wenzhuo4657</groupId>
+                 <artifactId>hystrix</artifactId>
+                 <version>${project.version}</version>
+             </dependency>
+             <dependency>
+                 <groupId>io.github.wenzhuo4657</groupId>
+                 <artifactId>do-rate-limiter</artifactId>
+                 <version>${project.version}</version>
+             </dependency>
+             <dependency>
+                 <groupId>io.github.wenzhuo4657</groupId>
+                 <artifactId>methodext</artifactId>
+                 <version>${project.version}</version>
+             </dependency>
+             <dependency>
+                 <groupId>io.github.wenzhuo4657</groupId>
+                 <artifactId>simplify-the-process</artifactId>
+                 <version>${project.version}</version>
+             </dependency>
+             <dependency>
+                 <groupId>io.github.wenzhuo4657</groupId>
+                 <artifactId>dynamic-gateway</artifactId>
+                 <version>${project.version}</version>
+             </dependency>
+             <dependency>
+                 <groupId>io.github.wenzhuo4657</groupId>
+                 <artifactId>gateway-common</artifactId>
+                 <version>${project.version}</version>
+             </dependency>
+             
+             <!-- 第三方依赖版本管理 -->
+             <dependency>
+                 <groupId>com.netflix.hystrix</groupId>
+                 <artifactId>hystrix-core</artifactId>
+                 <version>1.5.9</version>
+             </dependency>
+             <dependency>
+                 <groupId>commons-beanutils</groupId>
+                 <artifactId>commons-beanutils</artifactId>
+                 <version>1.8.3</version>
+             </dependency>
+             <dependency>
+                 <groupId>com.alibaba</groupId>
+                 <artifactId>fastjson</artifactId>
+                 <version>1.2.75</version>
+             </dependency>
+             <dependency>
+                 <groupId>com.google.guava</groupId>
+                 <artifactId>guava</artifactId>
+                 <version>32.1.2-jre</version>
+             </dependency>
+             <dependency>
+                 <groupId>org.redisson</groupId>
+                 <artifactId>redisson</artifactId>
+                 <version>3.37.0</version>
+             </dependency>
+             <dependency>
+                 <groupId>org.projectlombok</groupId>
+                 <artifactId>lombok</artifactId>
+                 <version>1.18.24</version>
+             </dependency>
+             <dependency>
+                 <groupId>junit</groupId>
+                 <artifactId>junit</artifactId>
+                 <version>4.12</version>
+                 <scope>test</scope>
+             </dependency>
+         </dependencies>
+    </dependencyManagement>
+
+
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!-- GitHub Packages 分发管理配置 -->
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/wenzhuo4657/easyStarter</url>
+        </repository>
+    </distributionManagement>
+
+</project>
