@@ -26,5 +26,18 @@
 全局统一的groupId为:<groupId>io.github.wenzhuo4657</groupId>
 - [参照](https://github.com/wenzhuo4657?tab=packages&repo_name=easyStarter)
 
-
-
+- bom工程管理
+```
+   <dependencyManagement>
+       <dependencies>
+           <dependency>
+               <groupId>io.github.wenzhuo4657</groupId>
+               <artifactId>easyStarter-bom</artifactId>
+               <version>1.0.0-SNAPSHOT</version>
+               <type>pom</type>
+               <scope>import</scope>
+           </dependency>
+       </dependencies>
+   </dependencyManagement>
+   
+```

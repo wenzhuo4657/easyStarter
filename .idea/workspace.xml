@@ -4,33 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01617cc6-4ca8-4dbb-83b4-cbb855c0932d" name="更改" comment="feat: 责任链和规则书结构完善">
-      <change afterPath="$PROJECT_DIR$/easyStarter-bom/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="01617cc6-4ca8-4dbb-83b4-cbb855c0932d" name="更改" comment="style: 版本统一、maven发包至github-packages、readme修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoRateLimiter/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoRateLimiter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DoRateLimiter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicRouting-springCloud/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicRouting-springCloud/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicRouting-springCloud/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicRouting-springCloud/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicRouting-springCloud/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicRouting-springCloud/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicRouting-springCloud/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicRouting-springCloud/gateway-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicRouting-springCloud/gateway-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicRouting-springCloud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicRouting-springCloud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicRouting-springCloud/test/client1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicRouting-springCloud/test/client1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicRouting-springCloud/test/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicRouting-springCloud/test/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicRouting-springCloud/test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicRouting-springCloud/test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplifyTheProcess/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SimplifyTheProcess/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hystrix/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix/src/main/java/org/example/hystrix/annotation/DoHystrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/hystrix/src/main/java/org/example/hystrix/annotation/DoHystrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/methodext/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/methodext/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whiteList/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/whiteList/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whiteList/src/main/java/org/example/whiteList/DoJoinPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/whiteList/src/main/java/org/example/whiteList/DoJoinPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whiteList/src/main/resources/META-INF/spring.factories" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +121,7 @@
       <workItem from="1757052378460" duration="6549000" />
       <workItem from="1757207024002" duration="10163000" />
       <workItem from="1757229423029" duration="455000" />
-      <workItem from="1757294091481" duration="8575000" />
+      <workItem from="1757294091481" duration="10678000" />
     </task>
     <task id="LOCAL-00001" summary="delete: 删除无用、未完成的中间件">
       <option name="closed" value="true" />
@@ -180,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757058946278</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="style: 版本统一、maven发包至github-packages、readme修改">
+      <option name="closed" value="true" />
+      <created>1757304224823</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1757304224823</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +197,7 @@
     <MESSAGE value="docs： readme" />
     <MESSAGE value="feat: 新增springcloud动态路由模块" />
     <MESSAGE value="backlink" />
-    <option name="LAST_COMMIT_MESSAGE" value="backlink" />
+    <MESSAGE value="style: 版本统一、maven发包至github-packages、readme修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: 版本统一、maven发包至github-packages、readme修改" />
   </component>
 </project>
